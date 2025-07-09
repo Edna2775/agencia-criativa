@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agencia Criativa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Agencia Criativa</h1>
+    <p>Transformamos ideias em realidade digital</p>
+    <button onclick="mostrarFormulario()">Fale Connosco</button>
+  </header>
+
+  <section id="formulario" style="display: none;">
+    <h2>Formulario de Contato</h2>
+    <form onsubmit="enviarFormulario(event)">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
